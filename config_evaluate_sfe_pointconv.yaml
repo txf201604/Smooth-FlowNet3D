@@ -1,0 +1,46 @@
+#gpu: "0"
+#multi_gpu: null
+gpu: "0"
+multi_gpu: "0, 1, 2, 3"
+
+model_name: PointConvSFE
+
+full: True
+
+evaluate: True
+resume: True
+#ckpt_dir: /mnt/txf/SmoothFlowNet3D/pretrain_weights/PointConvSFE/
+ckpt_dir: /mnt/txf/SmoothFlowNet3D/pretrain_weights/PointConv/
+
+arch: Separable
+last_relu: False
+allow_less_points: False
+
+
+# general args
+batch_size: 1
+#pretrain: PointConvSFE_508_0.0188.pth
+pretrain: models_bid_lighttoken_res_369_0.0288.pth
+dim: 3
+num_points: 8192
+
+DEVICE: cuda
+
+dataset: KITTI # FlyingThings3DSubset KITTI
+data_root:  ./data/HPLFlowNet
+save_dir: test/ours_KITTI # ours_FlyingThings3DSubset ours_KITTI
+
+data_process:
+  DEPTH_THRESHOLD: 35.
+  NO_CORR: True
+
+# miscalleneous
+workers: 0
+
+
+
+
+
+
+
+
