@@ -1,5 +1,6 @@
-# Bi-PointFlowNet☯️: Bidirectional Learning for Point Cloud Based Scene Flow Estimation
-Wencan Cheng and Jong Hwan Ko
+# Smooth-FlowNet3D: Improving Smoothness of Scene Flow Estimation from Point Clouds through Hierarchical Feature Learning and Refinement
+Xuefeng Tan, Dejun Zhang and Mian Zhang
+
 
 ## Prerequisities
 Our model is trained and tested under:
@@ -52,19 +53,19 @@ We provide pretrained model in ```pretrain_weights```.
 
 Please run the following instrcutions for evaluating.
 ```bash
-python3 evaluate_bid_pointconv.py config_evaluate_bid_pointconv.yaml
+python3 evaluate_sfe_pointconv.py config_evaluate_sfe_pointconv.yaml
 ```
 
 ### Train
 If you need a newly trained model, please set `data_root` in the configuration file to `SAVE_PATH` in the data preprocess section before evaluation at the first. Then excute following instructions.
 
 ```bash
-python3 train_bid_pointconv.py config_train_bid_pointconv.yaml
+python3 train_sfe_pointconv.py config_train_sfe_pointconv.yaml
 ```
 
 
 ## Acknowledgement
 
-We thank [repo](https://github.com/DylanWusee/PointPWC) for the corase-to-fine framework.
+We thank [PointPWC-Net](https://github.com/DylanWusee/PointPWC) and [Bi-FlowNet](https://github.com/cwc1260/BiFlow) for the corase-to-fine framework.
 
 
