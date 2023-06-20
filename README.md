@@ -50,7 +50,7 @@ python3 data_preprocess/process_kitti.py RAW_DATA_PATH SAVE_PATH/KITTI_processed
 ### Evaluation
 Set `data_root` in the configuration file to `SAVE_PATH` in the data preprocess section before evaluation. 
 
-We provide pretrained model in ```pretrain_weights```.
+We provide pretrained model in [baidu](https://pan.baidu.com/s/1rgRqG-l6HJrmnrC7X4yCDQ) and the code is ```5wt7```.
 
 Please run the following instrcutions for evaluating.
 ```bash
