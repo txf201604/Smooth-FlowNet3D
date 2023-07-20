@@ -1,4 +1,4 @@
-# Smooth-FlowNet3D: Improving Smoothness of Scene Flow Estimation from Point Clouds through Hierarchical Feature Learning and Refinement
+# Smooth-FlowNet3D
 Xuefeng Tan, Dejun Zhang and Mian Zhang
 
 <img src="./images/SmoothFlowNet3D_Overview.png" width=100%>
