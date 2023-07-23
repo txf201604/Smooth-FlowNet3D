@@ -1,5 +1,4 @@
 # Smooth-FlowNet3D
-Xuefeng Tan, Dejun Zhang and Mian Zhang
 
 <img src="./images/SmoothFlowNet3D_Overview.png" width=100%>
 
